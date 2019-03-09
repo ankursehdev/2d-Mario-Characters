@@ -136,30 +136,32 @@ for (let key in artObj) {
 			divRow.classList.add("row");
 
 			for (var z = 0; z < eachArt[i].length; z++) {
-					let innerSpan = document.createElement("span");
+				let innerSpan = document.createElement("span");
 
-					if (eachArt[i][z] == 'r') {
-							innerSpan.classList.add("r")
-					} else if (eachArt[i][z] == 'w') {
-							innerSpan.classList.add("w")
-					} else if (eachArt[i][z] == 'k') {
-							innerSpan.classList.add("k")
-					} else if (eachArt[i][z] == 'o') {
-							innerSpan.classList.add("o")
-					} else if (eachArt[i][z] == 't') {
-							innerSpan.classList.add("t")
-					} else if (eachArt[i][z] == 'p') {
-							innerSpan.classList.add("p")
-					} else if (eachArt[i][z] == 'b') {
-							innerSpan.classList.add("b")
-					} else if (eachArt[i][z] == 'y') {
-							innerSpan.classList.add("y")
-					} else if (eachArt[i][z] == 'n') {
-							innerSpan.classList.add("n")
-					} else if (eachArt[i][z] == 'g') {
-							innerSpan.classList.add("g")
-					}
-					divRow.appendChild(innerSpan);
+				if (eachArt[i][z] == 'r') {
+					innerSpan.classList.add("r")
+				} else if (eachArt[i][z] == 'w') {
+					innerSpan.classList.add("w")
+				} else if (eachArt[i][z] == 'k') {
+					innerSpan.classList.add("k")
+				} else if (eachArt[i][z] == 'o') {
+					innerSpan.classList.add("o")
+				} else if (eachArt[i][z] == 't') {
+					innerSpan.classList.add("t")
+				} else if (eachArt[i][z] == 'p') {
+					innerSpan.classList.add("p")
+				} else if (eachArt[i][z] == 'b') {
+					innerSpan.classList.add("b")
+				} else if (eachArt[i][z] == 'y') {
+					innerSpan.classList.add("y")
+				} else if (eachArt[i][z] == 'n') {
+					innerSpan.classList.add("n")
+				} else if (eachArt[i][z] == 'g') {
+					innerSpan.classList.add("g")
+				} else {
+					console.log("No color for this pixel")
+				}
+				divRow.appendChild(innerSpan);
 			}
 			document.getElementById(key).appendChild(divRow);
 	}
