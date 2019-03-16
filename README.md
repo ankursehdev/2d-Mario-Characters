@@ -10,6 +10,10 @@ I found this implementaion [css-tricks](https://css-tricks.com/fun-times-css-pix
 
 <img src="display.png" alt="Mario Characters" >
 
+## On Codepen
+
+Find it here on [Codepen](https://codepen.io/ankursehdev/pen/JzLjrP)
+
 ## Next
 
 1. I will be writing a reactJS application to handle all the colors dynamically.
